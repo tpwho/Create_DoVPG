@@ -11,7 +11,7 @@ SSH is locked down via sshkeys and a new key is generated each time the environm
 
 ## Usage
 ```
-go get ./...
+go get -d ./...
 go build main.go
 ./main -pat <Digital Ocean Personal Access Token>
 ```
