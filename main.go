@@ -248,12 +248,6 @@ func createFirewalls(ctx context.Context, client *godo.Client) error {
 					Addresses: privateAddresses,
 				},
 			},
-			{
-				Protocol: "icmp",
-				Destinations: &godo.Destinations{
-					Addresses: privateAddresses,
-				},
-			},
 			//Allow HTTP out
 			{
 				Protocol:  "tcp",
