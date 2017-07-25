@@ -152,12 +152,6 @@ func createFirewalls(ctx context.Context, client *godo.Client) error {
 					Addresses: privateAddresses,
 				},
 			},
-			{
-				Protocol: "icmp",
-				Destinations: &godo.Destinations{
-					Addresses: privateAddresses,
-				},
-			},
 			//Allow DNS Outbound
 			{
 				Protocol:  "udp",
